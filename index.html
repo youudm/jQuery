@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <script src="jquery-3.5.1.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <h1>jquery</h1>
+  </body>
+  <script>
+    $("h1").css("color", "red");
+    // body 밑에 있으면 실행이 되지 않음
+    $(document).ready(function () {
+      $("h1").css("color", "red");
+    });
+    // 어느 위치에 있어도 정상적으로 실행되는 코드
+    $(function () {
+      $("h1").css("color", "red");
+    });
+    // 가장많이 쓰는 표현 방식
+  </script>
+</html>
